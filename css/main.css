@@ -93,7 +93,7 @@ body > section,
 	color: #5b646e;
 }
 
-.devider {
+.devider, .divider {
   margin-top: 30px;
 }
 
@@ -365,7 +365,6 @@ top: -8px;
 
 .work-item {
     float: left;
-    width: 25%;
     position: relative;
 }
 
@@ -415,7 +414,7 @@ top: -8px;
 .work-item .overlay a {
   border: 1px solid #fff;
   border-radius: 50%;
-  display: inline-block;
+  display: inline-table;
   margin-top: 20%;
   padding: 7px 10px;
 }
