@@ -144,6 +144,10 @@
         height: 40rem;
         display: inline-table;
     }
+
+    .carousel-caption {
+        top: 15%;
+    }
         
     </style>
 
@@ -171,7 +175,7 @@ Fixed Navigation
             <!-- /responsive nav button -->
 
             <!-- logo -->
-            <a class="navbar-brand" href="#body"> v0.1 Beta expected July 2023
+            <a class="navbar-brand" href="#body">
 <!--                 <svg xmlns="http://www.w3.org/2000/svg" data-svgdocument="" id="_Vu_n21r4i8YQsOUFY7Pak"
                      class="fl-svgdocument" y="0" overflow="hidden"
                      data-bbox="115.17493438720703 29.554386854171753 253.99888757976805 48.467968463897705" style=""
@@ -221,9 +225,9 @@ Fixed Navigation
         <nav class="collapse navbar-collapse navbar-right" role="navigation">
             <ul id="nav" class="nav navbar-nav">
                 <li class="current"><a href="#body">Home</a></li>
-                <li><a href="#apps">Our Apps</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#features">Services</a></li>
                 <li><a href="#showcase">Showcase</a></li>
-                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#team">Team</a></li>
             </ul>
         </nav>
@@ -254,14 +258,16 @@ Home Slider
         <div class="carousel-inner" role="listbox">
 
             <!-- single slide -->
-            <div class="item active" style="background-image: url(img/banner-chalk.jpg);">
+<!--                 style="background-image: url(img/banner-chalk.jpg);">-->
+            <div class="item active"
+                style="background-color: teal"
+            >
                 <div class="carousel-caption">
                     <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span
-                            style="font-family: Chalkduster">Generative AI Powered Realistic Animations!</span></h2>
+                            style="font-family: Chalkduster">Chalkboard Handwriting Animations!</span></h2>
                     <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span
-                            class="color">Create Videos</span> with only a few clicks.</h3>
-                    <p data-wow-duration="1000ms" class="wow slideInRight animated">Unlimited Customizations
-                        Possible</p>
+                            class="color">Record</span> vector animations and export animation into web pages.</h3>
+                    <p data-wow-duration="1000ms" class="wow slideInRight animated">No Coding Needed To Animate</p>
 
                     <ul class="social-links text-center">
                         <li><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
@@ -270,15 +276,17 @@ Home Slider
                         <li><a href=""><i class="fab fa-reddit fa-lg"></i></a></li>
                     </ul>
                 </div>
-                `
             </div>
             <!-- end single slide -->
 
             <!-- single slide -->
-            <div class="item" style="background-image: url(img/banner-type.jpg);">
+<!--                 style="background-image: url(img/banner-type.jpg);"-->
+            <div class="item"
+                 style="background-color: darkslategrey"
+            >
                 <div class="carousel-caption">
                     <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span
-                            style="font-family: 'American Typewriter',Consolas !important">Photo realistic typewriter!</span>
+                            style="font-family: 'American Typewriter',Consolas !important">Photo realistic typewriters and consoles!</span>
                     </h2>
                     <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span
                             class="color">Create videos</span> with only a few clicks.</h3>
@@ -324,7 +332,7 @@ Apps
                     </div>
 
                     <div class="service-desc">
-                        <h3>Handwriting Generator</h3>
+                        <h3>Chalkboard And Handwritten Text Animation</h3>
                         <p>Our Intelligent Handwriting Generator converts your text into realistic animated video on a
                             chalkboard, whiteboard or paper surface backgrounds. Customize your fonts, choose your
                             backgrounds, integrate with your offsite content and even host your completed work - all for
@@ -342,7 +350,7 @@ Apps
                     </div>
 
                     <div class="service-desc">
-                        <h3>Typing/Console Video Generator</h3>
+                        <h3>Typewriter, Messaging and Console Emulator</h3>
                         <p>Create photorealistic videos of typing in action with ability to bake in human like behaviors
                             such as error correction, page motion, human changes or overwriting. Build narration ready content for
                             educational tutorials, business presentations, social media or to improve collaboration.
@@ -361,8 +369,8 @@ Apps
                     </div>
 
                     <div class="service-desc">
-                        <h3>Export Animations To Video</h3>
-                        <p>Our apps help SVG and Canvas animations be recorded into video content if necessary</p>
+                        <h3>Record Animations To Video</h3>
+                        <p>After unlocking, you can record your screen at the best possible resolution and speed.</p>
                     </div>
                 </div>
             </div>
@@ -375,8 +383,8 @@ Apps
                     </div>
 
                     <div class="service-desc">
-                        <h3>Export Animations To HTML</h3>
-                        <p>Skip the need of using powerpoints for presentations. Create a portable html page instead with a few clicks.</p>
+                        <h3>Export Animations To HTML or SVG</h3>
+                        <p>We offer ability to export the animations to working code in HTML5, CSS and SVG</p>
                     </div>
                 </div>
             </div>
@@ -394,7 +402,7 @@ Features
         <div class="row">
 
             <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-                <h2>Features</h2>
+                <h2>Our Services</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
             </div>
 
@@ -406,11 +414,8 @@ Features
                     </div>
 
                     <div class="service-desc">
-                        <h3>Code and Web Ready </h3>
-                        <p>All our applications run on modern browsers (eliminating the need to rely on any installed
-                            software or plugins) and are developer friendly from the ground up. With an easy to use
-                            markup language for predictable replication and allowing creators to save their animated
-                            videos as code.</p>
+                        <h3>Custom Web Application Development</h3>
+                        <p>We offer custom software development for web and cloud applications (Front End and Backend) with expertise in Single Page Applications, Javascript frameworks, REST APIs, Serverless Technology, Machine Learning and AI application development.</p>
                     </div>
                 </div>
             </div>
@@ -424,10 +429,8 @@ Features
                     </div>
 
                     <div class="service-desc">
-                        <h3>Fully Customizable</h3>
-                        <p>Our software is designed to allow creators customize the outcome to suit their needs. Be it
-                            fonts, background imagery, language, video speed, resolution, colors and photo realistic
-                            effects.</p>
+                        <h3>Web Animation and Design Consulting</h3>
+                        <p>Our software is designed to allow creators customize the outcome to suit their needs. We also offer professionals to help your needs in producing your desired animated content.</p>
                     </div>
                 </div>
             </div>
@@ -441,11 +444,9 @@ Features
                     </div>
 
                     <div class="service-desc">
-                        <h3>Support and Consulting</h3>
+                        <h3>Premium Support</h3>
                         <p>Our team of experts and creators will guide you through your needs in getting your media or
-                            content completed. Premium customers can expect reliable service level agreement based
-                            turnaround times for their questions and queries. Community support is always free to
-                            use.</p>
+                            content completed. Premium customers can expect reliable turnaround times. Our community offers free support as well.</p>
                     </div>
                 </div>
             </div>
@@ -483,7 +484,7 @@ Our Works
                     <li><a href="javascript:;" data-filter=".chalk" class="filter">Chalkboard</a></li>
                     <li><a href="javascript:;" data-filter=".type" class="filter">Typewriter</a></li>
                     <li><a href="javascript:;" data-filter=".console" class="filter">Console</a></li>
-                    <li><a href="javascript:;" data-filter=".testbed" class="filter">Test Bed</a></li>
+<!--                    <li><a href="javascript:;" data-filter=".testbed" class="filter">Test Bed</a></li>-->
                 </ul>
             </div>
         </div>
@@ -513,26 +514,26 @@ Our Works
                 <source src="img/works/WriterMovieRecording.mov" type="video/mp4" />
             </video>
         </figure>
-        <figure class="mix work-item console">
-            <video class="img-fluid vidrect" autoplay loop muted>
-                <source src="img/works/ConsoleMovieRecording.mov" type="video/mp4" />
-            </video>
-        </figure>
-        <figure class="mix work-item testbed">
-            <video class="img-fluid vidrect" autoplay loop muted>
-                <source src="img/works/FullArrayWorks1.mov" type="video/mp4" />
-            </video>
-        </figure>
-        <figure class="mix work-item type">
-            <video class="img-fluid vidrect" autoplay loop muted>
-                <source src="img/works/IntroductionTyper.mov" type="video/mp4" />
-            </video>
-        </figure>
-        <figure class="mix work-item testbed">
-            <video class="img-fluid vidrect" autoplay loop muted>
-                <source src="img/works/FullArrayWorks2.mov" type="video/mp4" />
-            </video>
-        </figure>
+<!--        <figure class="mix work-item console">-->
+<!--            <video class="img-fluid vidrect" autoplay loop muted>-->
+<!--                <source src="img/works/ConsoleMovieRecording.mov" type="video/mp4" />-->
+<!--            </video>-->
+<!--        </figure>-->
+<!--        <figure class="mix work-item testbed">-->
+<!--            <video class="img-fluid vidrect" autoplay loop muted>-->
+<!--                <source src="img/works/FullArrayWorks1.mov" type="video/mp4" />-->
+<!--            </video>-->
+<!--        </figure>-->
+<!--        <figure class="mix work-item type">-->
+<!--            <video class="img-fluid vidrect" autoplay loop muted>-->
+<!--                <source src="img/works/IntroductionTyper.mov" type="video/mp4" />-->
+<!--            </video>-->
+<!--        </figure>-->
+<!--        <figure class="mix work-item testbed">-->
+<!--            <video class="img-fluid vidrect" autoplay loop muted>-->
+<!--                <source src="img/works/FullArrayWorks2.mov" type="video/mp4" />-->
+<!--            </video>-->
+<!--        </figure>-->
     </div>
 
 
@@ -548,8 +549,8 @@ End Our Works
         <div class="divider"><i class="fa fa-heart-o fa-lg"></i></div>
     </div>
     <div class="row">
-        <h2 style="text-align:center;">Free version Available 2nd half of 2023</h2>
-        <h2 style="text-align:center;">Paid version Coming Soon (powered by FastSpring.com)</h2>
+        <h3 style="text-align:center;">Pay as you go on <a style="color: darkred" href="https://beta.textmover.com">TextMover App</a></h3>
+        <h3 style="text-align:center;">Payments powered by our partner <a style="color: darkred" href="https://fastspring.com"> FastSpring.com </a></h3>
     </div>
 <!--    <div class="container-fluid o-lg-center-xl" style="display:flex">-->
 <!--        <div class="row plan-cards">-->
@@ -667,9 +668,10 @@ Meet Our Team
             </div>
 
             <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-                <p>TextMover Labs was founded in sunny Arizona as a culmination of years of painstaking research and app development attempts to automate
+                <p>TextMover Labs was founded in sunny Arizona as a culmination of years of research and app development attempts to automate
                     tedious steps required to create interactive content like animations, presentations, web documents and videos.
-                    We use cutting edge generative AI and machine learning to ethically build content from scratch without relying on existing content for training, eliminating the risk of stealing copyrighted or proprietary content.</p>
+                    We use the latest machine learning algorithms, typography, web technologies to ethically build content from scratch.
+                    We do not use any proprietary or 3rd party data to train our models and our datasets (No generative AI). </p>
                 <br/>
                 <p>Our diverse and worldwide group of professionals are always there to assist our customers' needs.
                 Contact us to learn more about our operations. </p>
@@ -693,7 +695,7 @@ Some fun facts
             <div class="row number-counters">
 
                 <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-                    <h2>Some Fun Facts</h2>
+                    <h2>Some Facts</h2>
                     <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
                 </div>
 
@@ -711,7 +713,7 @@ Some fun facts
                      data-wow-delay="300ms">
                     <div class="counters-item">
                         <i class="fa fa-users fa-3x"></i>
-                        <strong data-to="50">0</strong>
+                        <strong data-to="5">0</strong>
                         <!-- Set Your Number here. i,e. data-to="56" -->
                         <p>Satisfied Clients</p><br/>
                         <p>Creators and Crafters across the globe use our tools</p>
@@ -721,7 +723,7 @@ Some fun facts
                      data-wow-delay="600ms">
                     <div class="counters-item">
                         <i class="fa fa-rocket fa-3x"></i>
-                        <strong data-to="100">0</strong>
+                        <strong data-to="12">0</strong>
                         <!-- Set Your Number here. i,e. data-to="56" -->
                         <p>Projects Delivered</p><br/>
                         <p>Across variety of use cases</p>
@@ -733,8 +735,8 @@ Some fun facts
                         <i class="fa fa-university fa-3x"></i>
                         <strong data-to="5">0</strong>
                         <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p>Research Papers In The Works</p><br/>
-                        <p>Cutting Edge Generative AI, Behavior Mapping And Computer Vision Research</p>
+                        <p>Research Papers In The Works Or Published</p><br/>
+                        <p>Contact us for paper pdf. Our team has produced unique research addressing complex problems in the animation, advertising, image generation, copyright protection and dynamic evaluation areas</p>
                     </div>
                 </div>
                 <!-- end first count item -->
@@ -757,7 +759,7 @@ End Some fun facts
                 <div class="footer-single">
 <!--                    <img src="img/textMover-logo-clean.svg" alt="">-->
                     <img src="img/textMover-label.png" style="height: 62px; left: 116px;top: 0;">
-                    <p>Generative AI powered animations at your fingertips. Brought to you by TextMover Labs! Our applications are currently in Beta and will be available to use soon!</p>
+                    <p>Realistic customizable animations at your fingertips. Brought to you by TextMover Labs! Our applications are currently in Beta and will be available to use soon!</p>
                 </div>
             </div>
 
@@ -798,7 +800,7 @@ End Some fun facts
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright text-center">
-                    Copyright © 2021-2023 <a href="https://textmover.com/">TextMover Labs LLC</a>. All rights reserved.
+                    Copyright © 2021-2025 <a href="https://textmover.com/">TextMover Labs LLC</a>. All rights reserved.
                     Website Template Designed By <a href="http://themefisher.com/" style="text-decoration:underline;">Themefisher</a>
                 </p>
                 <p class="copyright text-center">
