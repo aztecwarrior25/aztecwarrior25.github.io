@@ -102,6 +102,24 @@
 			display:  inline-block;
     	}
 
+		.carousel-video-item {
+			flex: 1 1 45%;
+			max-width: 48%;
+			border: 2px solid #fff;
+			margin: 1%;
+		}
+
+		@media (max-width: 768px) {
+			.img-responsive {
+				max-width: 80%;
+				height: auto;
+			}
+			.carousel-video-item {
+				flex: 1 1 100%;
+				max-width: 80%;
+			}
+		}
+
     	.footer {
     		/*background-color: #43859fee;*/
     		background-color: rgba(25, 59, 53, 0.7);
@@ -157,9 +175,47 @@
     }
 
     .carousel-caption {
-        top: 15%;
+        top: 5%;
     }
-        
+
+	@media (max-width: 1200px) {
+		.carousel-caption h2 {
+			font-size: 18px;
+			margin: 0;
+		}
+		.carousel-caption h3 {
+			font-size: 14px;
+			margin: 0;
+		}
+		.carousel-caption p {
+			font-size: 12px;
+			margin: 0 0 5px;
+		}
+		.carousel-caption {
+			top: 5%;
+			padding: 5px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.carousel-caption h2 {
+			font-size: 16px;
+			margin: 0;
+		}
+		.carousel-caption h3 {
+			font-size: 14px;
+			margin: 0;
+		}
+		.carousel-caption p {
+			font-size: 10px;
+			margin: 0 0 5px;
+		}
+		.carousel-caption {
+			top: 5%;
+			padding: 5px;
+		}
+	}
+
     </style>
 
 </head>
@@ -232,8 +288,8 @@ Fixed Navigation
             <ul id="nav" class="nav navbar-nav">
                 <li class="current"><a href="#body">Home</a></li>
                 <li><a href="#apps">Apps</a></li>
-                <li><a href="#features">Services</a></li>
                 <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#features">Services</a></li>
                 <li><a href="#team">Team</a></li>
             </ul>
         </nav>
@@ -277,14 +333,20 @@ Home Slider
 						<span class="color">Create And Record</span> animated handwriting (block, cursive, all-caps) effects with a few clicks.</h3>
 						<p data-wow-duration="1000ms" class="wow slideInRight animated">No Coding or Expensive Software Needed To Animate</p>
 					</a>
-					<div style="display: flex; justify-content: center; gap: 10px; margin-top: 1%; margin-bottom: 10px;">
+					<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 1%; margin-bottom: 10px;">
 						<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-Handwritten.gif" class="img-responsive" alt="Handwritten animation">
 						<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-PaperHandwrite.gif" class="img-responsive" alt="Paper handwrite animation">
 					</div>
-					<h4 style="color: #fff; margin-top: 10px;">Demo: Cursive Handwriting Animation</h4>
-					<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/CursivePreviewMed.mp4" controls preload="none" style="width: 70%"></video> <br/>
-					<h4 style="color: #fff; margin-top: 10px;">Demo: Paper Handwriting Animation</h4>
-					<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/HandwritePreviewShort.mp4" controls preload="none" style="width: 70%"></video>
+					<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 1%;">
+						<div class="carousel-video-item">
+							<h4 style="color: #fff; margin-top: 10px;">Demo: Cursive Handwriting Animation</h4>
+							<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/CursivePreviewMed.mp4" controls preload="none" style="width: 100%"></video>
+						</div>
+						<div class="carousel-video-item">
+							<h4 style="color: #fff; margin-top: 10px;">Demo: Paper Handwriting Animation</h4>
+							<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/HandwritePreviewShort.mp4" controls preload="none" style="width: 100%"></video>
+						</div>
+					</div>
                     <ul class="social-links text-center">
                         <li><a href="https://github.com/TextMoverLabs"><i class="fab fa-github fa-lg"></i></a></li>
                         <li><a href="https://t.me/s/textmover"><i class="fab fa-telegram fa-lg"></i></a></li>
@@ -308,14 +370,20 @@ Home Slider
 	                            class="color">Create custom animated effects</span> with only a few clicks.</h3>
 	                    <p data-wow-duration="500ms" class="wow slideInRight animated">Customize the look of your animation or use a chroma green screen to embed your animations into other content</p>
 					</a>
-					<div style="display: flex; justify-content: center; gap: 10px; margin-top: 1%; margin-bottom: 10px;">
+					<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 1%; margin-bottom: 10px;">
 						<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-ConsoleMake.gif" class="img-responsive" alt="Console animation">
 						<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-Typewriter.gif" class="img-responsive" alt="Typewriter animation">
 					</div>
-					<h4 style="color: #fff; margin-top: 10px;">Demo: Console Typing Animation</h4>
-					<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/ConsolePreviewShort.mp4" controls preload="none" style="width: 70%"></video>
-					<h4 style="color: #fff; margin-top: 10px;">Demo: Typewriter Effect Animation</h4>
-					<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/TypewriterPreviewShort.mp4" controls preload="none" style="width: 70%"></video>
+					<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 1%;">
+						<div class="carousel-video-item">
+							<h4 style="color: #fff; margin-top: 10px;">Demo: Console Typing Animation</h4>
+							<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/ConsolePreviewShort.mp4" controls preload="none" style="width: 100%"></video>
+						</div>
+						<div class="carousel-video-item">
+							<h4 style="color: #fff; margin-top: 10px;">Demo: Typewriter Effect Animation</h4>
+							<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/TypewriterPreviewShort.mp4" controls preload="none" style="width: 100%"></video>
+						</div>
+					</div>
                     <ul class="social-links text-center">
                         <li><a href="https://github.com/TextMoverLabs"><i class="fab fa-github fa-lg"></i></a></li>
                         <li><a href="https://t.me/s/textmover"><i class="fab fa-telegram fa-lg"></i></a></li>
@@ -337,14 +405,20 @@ Home Slider
 	                    <p data-wow-duration="500ms" class="wow slideInRight animated">Choose from several options for backgrounds, fonts, styles, margins, effects</p>
 					</a>
 
-					<div style="display: flex; justify-content: center; gap: 10px; margin-top: 1%; margin-bottom: 10px;">
-						<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-Reveal.gif" class="img-responsive" alt="Reveal animation">
-						<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-OutlineText.gif" class="img-responsive" alt="Outline text animation">
+					<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 1%; margin-bottom: 10px;">
+						<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-Reveal.gif" class="img-responsive" alt="Reveal animation" style="height: 180px;">
+						<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-OutlineText.gif" class="img-responsive" alt="Outline text animation" style="height: 180px;">
 					</div>
-					<h4 style="color: #fff; margin-top: 10px;">Demo: Text Reveal Animation</h4>
-					<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/RevealPreviewShort.mp4" controls preload="none" style="width: 70%"></video>
-					<h4 style="color: #fff; margin-top: 10px;">Demo: Outline Text Animation</h4>
-					<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/OutlinePreviewShort.mp4" controls preload="none" style="width: 70%"></video>
+					<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 1%;">
+						<div class="carousel-video-item">
+							<h4 style="color: #fff; margin-top: 10px;">Demo: Text Reveal Animation</h4>
+							<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/RevealPreviewShort.mp4" controls preload="none" style="width: 100%"></video>
+						</div>
+						<div class="carousel-video-item">
+							<h4 style="color: #fff; margin-top: 10px;">Demo: Outline Text Animation</h4>
+							<video data-src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/vid/OutlinePreviewShort.mp4" controls preload="none" style="width: 100%"></video>
+						</div>
+					</div>
                     <ul class="social-links text-center">
                         <li><a href="https://github.com/TextMoverLabs"><i class="fab fa-github fa-lg"></i></a></li>
                         <li><a href="https://t.me/s/textmover"><i class="fab fa-telegram fa-lg"></i></a></li>
@@ -400,8 +474,8 @@ Apps
             <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
                 <h2>Our Apps</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-				            <div class="sec-sub-title text-center">
-                Sign Up For our <a href="https://beta.textmover.com" style = "color: darkcyan;font-weight: bolder;"> Beta Text Mover App </a> For more examples 
+				            <div class="sec-sub-title text-center" style="font-size: 18px;">
+                Sign Up for Our <a href="https://beta.textmover.com" style="color: darkcyan; font-weight: bolder;">Beta TextMover Online Animation App</a> for Free
             </div>
             </div>
 
@@ -476,69 +550,6 @@ Apps
 </section>
 <!--
 Features
-==================================== -->
-
-<section id="features" class="features">
-    <div class="container">
-        <div class="row">
-
-            <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-                <h2>Our Services</h2>
-                <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-            </div>
-
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fab fa-github fa-2x"></i>
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Custom Web Application Development</h3>
-                        <p>We offer custom software development for web and cloud applications (Front End and Backend) with expertise in Single Page Applications, Javascript frameworks, REST APIs, Serverless Technology, Machine Learning and AI application development.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end service item -->
-
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-sliders-h fa-2x"></i>
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Web Animation and Design Consulting</h3>
-                        <p>Our software is designed to allow creators customize the outcome to suit their needs. We also offer professionals to help your needs in producing your desired animated content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end service item -->
-
-            <!-- service item -->
-            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-comment-dots fa-2x"></i>
-                    </div>
-
-                    <div class="service-desc">
-                        <h3>Premium Support</h3>
-                        <p>Our team of experts and creators will guide you through your needs in getting your media or
-                            content completed. Premium customers can expect reliable turnaround times. Our community offers free support as well.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end service item -->
-
-        </div>
-    </div>
-</section>
-
-<!--
-End Features
 ==================================== -->
 
 
@@ -710,6 +721,72 @@ End Our Works
 </section>
 
 <!-- End Pricing ==================================== -->
+
+<!--
+Features
+==================================== -->
+<section id="features" class="features">
+    <div class="container">
+        <div class="row">
+
+            <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+                <h2>Our Services</h2>
+                <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+            </div>
+
+            <!-- service item -->
+            <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fab fa-github fa-2x"></i>
+                    </div>
+
+                    <div class="service-desc">
+                        <h3>Custom Web Application Development</h3>
+                        <p>We offer custom software development for web and cloud applications (Front End and Backend) with expertise in Single Page Applications, Javascript frameworks, REST APIs, Serverless Technology, Machine Learning and AI application development.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end service item -->
+
+            <!-- service item -->
+            <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-sliders-h fa-2x"></i>
+                    </div>
+
+                    <div class="service-desc">
+                        <h3>Web Animation and Design Consulting</h3>
+                        <p>Our software is designed to allow creators customize the outcome to suit their needs. We also offer professionals to help your needs in producing your desired animated content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end service item -->
+
+            <!-- service item -->
+            <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-comment-dots fa-2x"></i>
+                    </div>
+
+                    <div class="service-desc">
+                        <h3>Premium Support</h3>
+                        <p>Our team of experts and creators will guide you through your needs in getting your media or
+                            content completed. Premium customers can expect reliable turnaround times. Our community offers free support as well.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end service item -->
+
+        </div>
+    </div>
+</section>
+<!--
+End Features
+==================================== -->
+
 <!--
 Meet Our Team
 ==================================== -->
@@ -815,7 +892,7 @@ End Some fun facts
                 <div class="footer-single">
 <!--                    <img src="img/textMover-logo-clean.svg" alt="">-->
                     <img src="img/textMover-label.png" style="height: 62px; left: 116px;top: 0;">
-                    <p>Realistic customizable animations at your fingertips. Brought to you by TextMover Labs! Our applications are currently in Beta and will be available to use soon!</p>
+                    <p>Realistic customizable animations at your fingertips. Brought to you by TextMover Labs!</p>
                 </div>
             </div>
 
@@ -835,7 +912,6 @@ End Some fun facts
                         <li><a href="#team">About Us</a></li>
                         <li><a href="#showcase">Gallery Showcase</a></li>
                         <li><a href="#">Social Media Channels</a></li>
-                        <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -846,8 +922,12 @@ End Some fun facts
                     <h6>Support</h6>
                     <ul>
                         <li><a href="#">Contact Us on textmoverhelp[at]proton.me </a></li>
-                        <li><a href="#">Help Docs (See Blog) </a></li>
-                        <li><a href="#">Community Forum (Blog Comments)</a></li>
+                        <li><a href="https://www.beta.textmover.com/guide">Help Docs</a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="https://github.com/TextMoverLabs"><i class="fab fa-github fa-lg"></i></a></li>
+                        <li><a href="https://t.me/s/textmover"><i class="fab fa-telegram fa-lg"></i></a></li>
+                        <li><a href="https://discord.gg/Q6qJqS9D"><i class="fab fa-discord fa-lg"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -857,14 +937,16 @@ End Some fun facts
             <div class="col-md-12">
                 <p class="copyright text-center">
                     Copyright © 2021-2026 <a href="https://textmover.com/">TextMover Labs LLC</a>. All rights reserved.
-                    Website Template Designed By <a href="https://themefisher.com/" style="text-decoration:underline;">Themefisher</a>
                 </p>
                 <p class="copyright text-center">
                     Cookie Policy: This website does not need cookies. We don't collect ad will never sell your information. <br/>
 					Visit our
-					<a href = "termsAndConditions.html">
+					<a href="termsAndConditions.html" style="text-decoration: underline;">
 					Terms of Service
-					</a> page for information about our app. 
+					</a> page for information about our app.
+                </p>
+                <p class="copyright text-center">
+                    Website Template Designed By <a href="https://themefisher.com/" style="text-decoration:underline;">Themefisher</a>
                 </p>
             </div>
         </div>
