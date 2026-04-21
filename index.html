@@ -197,6 +197,39 @@
 		}
 	}
 
+	@media (max-width: 992px) {
+		#showcase-grid {
+			grid-template-columns: repeat(2, 1fr) !important;
+		}
+	}
+	@media (max-width: 576px) {
+		#showcase-grid {
+			grid-template-columns: 1fr !important;
+			padding: 5px !important;
+			gap: 10px !important;
+		}
+		#showcase-grid .work-item > img {
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+		#showcase-grid figure {
+			max-width: 100% !important;
+		}
+	}
+
+	@media (max-width: 768px) {
+		#navigation {
+			height: 50px !important;
+		}
+		#navigation .navbar-brand img {
+			height: 50px !important;
+		}
+		#navigation .navbar-toggle {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	}
+
 	@media (max-width: 768px) {
 		.carousel-caption h2 {
 			font-size: 16px;
@@ -446,14 +479,17 @@ SEO Section
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1 style="font-size: 28px; color: #333; margin-bottom: 15px;">Free Online Handwriting Animation Tool &mdash; No Software, No Coding</h1>
-                <p style="font-size: 16px; color: #555; max-width: 900px; margin: 0 auto 20px;">
+                <p style="font-size: 18px; color: #555; max-width: 900px; margin: 0 auto 20px;">
                     Textmover is a free online animation tool that lets you create stunning handwriting, chalkboard, typewriter, and console typing animations directly in your browser. No software download or installation required &mdash; and absolutely no coding experience needed. Simply type your text, choose a style, and generate professional animated videos in minutes.
                 </p>
-                <p style="font-size: 15px; color: #666; max-width: 900px; margin: 0 auto;">
+                <p style="font-size: 18px; color: #666; max-width: 900px; margin: 0 auto;">
                     Whether you need animated handwriting for social media, educational content, business presentations, or creative projects, Textmover makes it easy for anyone to produce realistic text animations for free. Works on any device with a web browser &mdash; no plugins, no sign-up fees, no technical skills required.
                 </p>
-                <p style="font-size: 15px; color: #666; max-width: 900px; margin: 10px auto 0;">
+                <p style="font-size: 18px; color: #666; max-width: 900px; margin: 10px auto 0;">
                     Simply <a href="https://beta.textmover.com/" style="color: darkcyan; font-weight: bolder;">login to the app</a>, generate the animation and record using your computer or device's screen record and embed anywhere you wish.
+                </p>
+                <p style="font-size: 18px; color: #666; max-width: 900px; margin: 10px auto 0;">
+                    You can also use green screen or other plain backgrounds to embed your animation in or on top of other content using your favorite video editors. Alternatively after trying the software, contact us for a HTML or SVG or similar custom application, that suits your animation needs for a reasonable price which will run in your browser.
                 </p>
             </div>
         </div>
@@ -539,7 +575,7 @@ Apps
 
                     <div class="service-desc">
                         <h3>Export Animations To HTML or SVG</h3>
-                        <p>We offer ability to export the animations to working code in HTML5, CSS and SVG</p>
+                        <p>We offer ability to export the animations to working code in HTML5, CSS and SVG. Contact our team on how. We shall provide a tool via our custom web application consulting option for a nominal fee similar to fiverr link platforms.</p>
                     </div>
                 </div>
             </div>
@@ -582,24 +618,30 @@ Our Works
         </div>
     </div>
 
-    <div class="project-wrapper" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px;">
-        <figure class="mix work-item chalk" style="margin: 0;">
+    <div class="project-wrapper" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 20px;" id="showcase-grid">
+        <figure class="mix work-item chalk" style="margin: 0; text-align: center;">
 			<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-Handwritten.gif" style="width: 100%; height: auto;">
+			<figcaption style="padding: 8px 0; font-size: 14px;">Cursive Handwriting</figcaption>
         </figure>
-        <figure class="mix work-item chalk" style="margin: 0;">
+        <figure class="mix work-item chalk" style="margin: 0; text-align: center;">
 			<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-PaperHandwrite.gif" style="width: 100%; height: auto;">
+			<figcaption style="padding: 8px 0; font-size: 14px;">Block Handwriting</figcaption>
         </figure>
-        <figure class="mix work-item type" style="margin: 0;">
+        <figure class="mix work-item type" style="margin: 0; text-align: center;">
 			<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-OutlineText.gif" style="width: 100%; height: auto;">
+			<figcaption style="padding: 8px 0; font-size: 14px;">Outline Text</figcaption>
         </figure>
-        <figure class="mix work-item console" style="margin: 0;">
+        <figure class="mix work-item console" style="margin: 0; text-align: center;">
 			<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-ConsoleMake.gif" style="width: 100%; height: auto;">
+			<figcaption style="padding: 8px 0; font-size: 14px;">Console Make</figcaption>
         </figure>
-		<figure class="mix work-item type" style="margin: 0;">
+		<figure class="mix work-item type" style="margin: 0; text-align: center;">
 			<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-Reveal.gif" style="width: 100%; height: auto;">
+			<figcaption style="padding: 8px 0; font-size: 14px;">Reveal</figcaption>
         </figure>
-		<figure class="mix work-item console" style="margin: 0;">
+		<figure class="mix work-item console" style="margin: 0; text-align: center;">
 			<img src="https://d1zrkw1vilkm2v.cloudfront.net/CustomStyles/ZCJxfEpJTDc/qaTextMover-cdn/img/Thumbnail-Typewriter.gif" style="width: 100%; height: auto;">
+			<figcaption style="padding: 8px 0; font-size: 14px;">Mechanical Typewriting</figcaption>
         </figure>
     </div>
 
@@ -616,7 +658,9 @@ End Our Works
         <div class="divider"><i class="fa fa-heart-o fa-lg"></i></div>
     </div>
     <div class="row">
-        <h3 style="text-align:center;">Pay as you go on <a style="color: darkred" href="https://beta.textmover.com">TextMover App</a></h3>
+        <h3 style="text-align:center; max-width: 700px; margin: 0 auto;"><a style="color: darkred" href="https://beta.textmover.com">TextMover App</a> is free to try. Receive 50 credits for just signing up and creating an account. If you don't wish to create an account you can still try the app with limited features.</h3>
+        <hr style="max-width: 700px; margin: 20px auto;">
+        <h3 style="text-align:center;">Pay as you go on <a style="color: darkred" href="https://beta.textmover.com">TextMover App</a> (Coming Soon)</h3>
         <h3 style="text-align:center;">Payments powered by our partner <a style="color: darkred" href="https://fastspring.com"> FastSpring.com </a></h3>
     </div>
 <!--    <div class="container-fluid o-lg-center-xl" style="display:flex">-->
@@ -836,9 +880,9 @@ Some fun facts
                 <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="counters-item">
                         <i class="fa fa-video fa-3x"></i>
-                        <strong data-to="4500">0</strong>
+                        <strong data-to="5500">0</strong>
                         <!-- Set Your Number here. i,e. data-to="56" -->
-                        <p>Hours of Content Created</p><br/>
+                        <p>Hours of Animated Content Generated</p><br/>
                         <p>Each Hour of Video Saves 7 hours of creator time</p>
                     </div>
                 </div>
@@ -846,7 +890,7 @@ Some fun facts
                      data-wow-delay="300ms">
                     <div class="counters-item">
                         <i class="fa fa-users fa-3x"></i>
-                        <strong data-to="5">0</strong>
+                        <strong data-to="35">0</strong>
                         <!-- Set Your Number here. i,e. data-to="56" -->
                         <p>Satisfied Clients</p><br/>
                         <p>Creators and Crafters across the globe use our tools</p>
@@ -856,7 +900,7 @@ Some fun facts
                      data-wow-delay="600ms">
                     <div class="counters-item">
                         <i class="fa fa-rocket fa-3x"></i>
-                        <strong data-to="12">0</strong>
+                        <strong data-to="200">0</strong>
                         <!-- Set Your Number here. i,e. data-to="56" -->
                         <p>Projects Delivered</p><br/>
                         <p>Across variety of use cases</p>
@@ -869,7 +913,7 @@ Some fun facts
                         <strong data-to="5">0</strong>
                         <!-- Set Your Number here. i,e. data-to="56" -->
                         <p>Research Papers In The Works Or Published</p><br/>
-                        <p>Contact us for paper pdf. Our team has produced unique research addressing complex problems in the animation, advertising, image generation, copyright protection and dynamic evaluation areas</p>
+                        <p>Contact us for paper pdf.</p>
                     </div>
                 </div>
                 <!-- end first count item -->
